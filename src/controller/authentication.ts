@@ -6,7 +6,7 @@ export const register = async (req: express.Request, res: express.Response) => {
     try {
         const {email, password, username} = req.body
 
-        if (!email || !password || !username) {
+        if (!email || !password || !password) {
             return res.sendStatus(400)
         }
 
